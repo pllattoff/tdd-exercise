@@ -115,10 +115,10 @@ class MainTest {
     @Test
     void mergeArrays_shouldMergeTwoArrays() {
         //GIVEN
-        int[] a = {1, 2, 3, 4};
-        int[] b = {1, 2, 3, 4, 5};
+        int[] a = {1, 2, 3};
+        int[] b = {1, 2, 3, 4, 5, 6};
         //WHEN
-        int[] expected = {1, 2, 3, 4, 1, 2, 3, 4, 5};
+        int[] expected = {1, 2, 3, 1, 2, 3, 4, 5, 6};
         //THEN
         assertArrayEquals(expected,  Main.mergeArrays(a, b));
     }
